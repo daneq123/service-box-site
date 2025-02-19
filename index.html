@@ -4,51 +4,59 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Service BOX</title>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body>
     <header>
         <div class="container">
-            <h1>Service BOX</h1>
-            <p class="tagline">Фулфилмент с заботой о вашем бизнесе</p>
+            <h1 class="main-title" data-aos="fade-up">Service BOX</h1>
+            <p class="subtitle" data-aos="fade-up" data-aos-delay="200">Фулфилмент для вашего бизнеса. Простота, надежность и скорость.</p>
+            <a href="#contact" class="btn-primary" data-aos="fade-up" data-aos-delay="400">Оставить заявку</a>
         </div>
     </header>
-    <main>
-        <section class="services">
-            <div class="container">
-                <h2>Наши услуги</h2>
-                <div class="service-cards">
-                    <div class="card">
-                        <h3>Хранение товаров</h3>
-                        <p>Надежное и безопасное хранение для вашего бизнеса.</p>
-                    </div>
-                    <div class="card">
-                        <h3>Упаковка</h3>
-                        <p>Гарантированная защита товаров в процессе отправки.</p>
-                    </div>
-                    <div class="card">
-                        <h3>Доставка</h3>
-                        <p>Быстрая и удобная доставка в любую точку.</p>
-                    </div>
+
+    <section class="services" id="services">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">Наши услуги</h2>
+            <div class="service-cards" data-aos="fade-up" data-aos-delay="200">
+                <div class="card">
+                    <h3>Хранение товаров</h3>
+                    <p>Мы обеспечим безопасное и удобное хранение ваших товаров с гарантией сохранности.</p>
+                </div>
+                <div class="card">
+                    <h3>Упаковка</h3>
+                    <p>Мы профессионально упакуем вашу продукцию для дальнейшей доставки, с вниманием к каждой детали.</p>
+                </div>
+                <div class="card">
+                    <h3>Доставка</h3>
+                    <p>Быстрая и надежная доставка в любую точку мира. Мы позаботимся о своевременной доставке.</p>
                 </div>
             </div>
-        </section>
-        <section class="contact">
-            <div class="container">
-                <h2>Свяжитесь с нами</h2>
-                <form action="#" method="POST">
-                    <input type="text" name="name" placeholder="Ваше имя" required>
-                    <input type="tel" name="phone" placeholder="Ваш телефон" required>
-                    <button type="submit">Отправить заявку</button>
-                </form>
-            </div>
-        </section>
-    </main>
+        </div>
+    </section>
+
+    <section class="contact" id="contact">
+        <div class="container">
+            <h2 class="section-title">Свяжитесь с нами</h2>
+            <form action="#" method="POST">
+                <input type="text" name="name" placeholder="Ваше имя" required>
+                <input type="tel" name="phone" placeholder="Ваш телефон" required>
+                <button type="submit" class="btn-primary">Отправить заявку</button>
+            </form>
+        </div>
+    </section>
+
     <footer>
         <div class="container">
             <p>&copy; 2025 Service BOX. Все права защищены.</p>
         </div>
     </footer>
+
+    <script>
+        AOS.init({duration: 1000});
+    </script>
 </body>
 </html>
