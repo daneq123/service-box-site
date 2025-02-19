@@ -4,28 +4,51 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Service BOX</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
-        <h1>Добро пожаловать в Service BOX!</h1>
-        <p>Ваш партнер в фулфилменте: хранение, упаковка, доставка.</p>
+        <div class="container">
+            <h1>Service BOX</h1>
+            <p class="tagline">Фулфилмент с заботой о вашем бизнесе</p>
+        </div>
     </header>
-    <section>
-        <h2>Наши услуги</h2>
-        <ul>
-            <li>Хранение товаров</li>
-            <li>Упаковка</li>
-            <li>Доставка</li>
-        </ul>
-    </section>
-    <section>
-        <h2>Контакты</h2>
-        <p>Телефон: +7 (XXX) XXX-XX-XX</p>
-        <p>Email: example@example.com</p>
-    </section>
+    <main>
+        <section class="services">
+            <div class="container">
+                <h2>Наши услуги</h2>
+                <div class="service-cards">
+                    <div class="card">
+                        <h3>Хранение товаров</h3>
+                        <p>Надежное и безопасное хранение для вашего бизнеса.</p>
+                    </div>
+                    <div class="card">
+                        <h3>Упаковка</h3>
+                        <p>Гарантированная защита товаров в процессе отправки.</p>
+                    </div>
+                    <div class="card">
+                        <h3>Доставка</h3>
+                        <p>Быстрая и удобная доставка в любую точку.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="contact">
+            <div class="container">
+                <h2>Свяжитесь с нами</h2>
+                <form action="#" method="POST">
+                    <input type="text" name="name" placeholder="Ваше имя" required>
+                    <input type="tel" name="phone" placeholder="Ваш телефон" required>
+                    <button type="submit">Отправить заявку</button>
+                </form>
+            </div>
+        </section>
+    </main>
     <footer>
-        <p>&copy; 2025 Service BOX</p>
+        <div class="container">
+            <p>&copy; 2025 Service BOX. Все права защищены.</p>
+        </div>
     </footer>
 </body>
 </html>
